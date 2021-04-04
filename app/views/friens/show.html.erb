@@ -1,0 +1,18 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title"><%= @frien.first_name %> <%= @frien.last_name %></h5>
+  </div>
+  <div class="modal-body">
+    <p><%= @frien.email %> | <%= @frien.phone %> | <%= @frien.twitter %></p>
+  </div>
+  <div class="modal-footer">
+    <%= link_to 'Edit', edit_frien_path(@frien), class:"btn btn-dark" %>
+    <%= link_to 'Back', friens_path, class:"btn btn-dark" %>
+
+  </div>
+</div>
+
+
+
+
+
